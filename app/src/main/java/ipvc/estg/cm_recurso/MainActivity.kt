@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         val button = findViewById<ImageView>(R.id.imageView3)
         button.setOnClickListener{
-            val intent = Intent(this, Feed::class.java)
+            //val intent = Intent(this, Feed::class.java)
             startActivity(intent)
         }
 
