@@ -1,18 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#4CE6FF"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="393dp"
+        android:layout_height="181dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/logotipo" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="207dp"
+        android:layout_height="208dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-59dp"
+        android:layout_marginEnd="-56dp"
+        android:layout_marginRight="-56dp"
+        android:rotation="-30"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView1_1"
+        android:layout_width="207dp"
+        android:layout_height="208dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="-42dp"
+        android:layout_marginEnd="-52dp"
+        android:layout_marginRight="-52dp"
+        android:alpha="0.5"
+        android:rotation="-30"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="207dp"
+        android:layout_height="208dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-49dp"
+        android:layout_marginLeft="-49dp"
+        android:layout_marginTop="280dp"
+        android:rotation="180"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="-65dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <ImageView
+        android:id="@+id/imageView2_1"
+        android:layout_width="207dp"
+        android:layout_height="208dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-41dp"
+        android:layout_marginLeft="-41dp"
+        android:layout_marginTop="290dp"
+        android:alpha="0.5"
+        android:rotation="180"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="-51dp"
+        tools:layout_editor_absoluteY="281dp" />
+
     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Sign in your account"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView_username"
+        android:layout_width="356dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/username" />
+
+    <ImageView
+        android:id="@+id/imageView_password"
+        android:layout_width="356dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/imageView_username"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/password" />
+
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/imageView_password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:gravity="right"
+        android:text="Forget your password?" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="196dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:srcCompat="@drawable/botao" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="196dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:srcCompat="@drawable/botao" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="92dp"
+        android:layout_height="31dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:layout_marginBottom="-40dp"
+        android:gravity="center"
+        android:text="Ver Notas"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="26dp"
+        android:gravity="center"
+        android:text="Sign in"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="56dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Don't have an account? Create " />
+
+    <EditText
+        android:id="@+id/editText_username"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView_username"
+        android:layout_alignLeft="@+id/imageView_username"
+        android:layout_alignTop="@+id/imageView_username"
+        android:layout_alignEnd="@+id/imageView_username"
+        android:layout_alignRight="@+id/imageView_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:text="Username" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView_password"
+        android:layout_alignLeft="@+id/imageView_password"
+        android:layout_alignTop="@+id/imageView_password"
+        android:layout_alignEnd="@+id/imageView_password"
+        android:layout_alignRight="@+id/imageView_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:text="Password"
+        android:inputType="textPersonName"
+        android:maxLines="1"/>
+
+
+</RelativeLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CM_Recurso</string>
+    <string name="preference_file_key">file1</string>
+    <string name="notas">notas</string>
 </resources>
