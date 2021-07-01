@@ -138,7 +138,8 @@
         android:layout_marginTop="112dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        app:srcCompat="@drawable/botao" />
+        app:srcCompat="@drawable/botao"
+        android:onClick="notasPag"/>
 
     <TextView
         android:id="@+id/textView5"
