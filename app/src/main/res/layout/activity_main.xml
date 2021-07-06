@@ -126,7 +126,8 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        app:srcCompat="@drawable/botao" />
+        app:srcCompat="@drawable/botao"
+        android:onClick="postsPag"/>
 
     <ImageView
         android:id="@+id/imageView3"

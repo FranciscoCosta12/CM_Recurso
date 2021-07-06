@@ -20,4 +20,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, Notes::class.java)
         startActivity(intent)
     }
+
+    fun postsPag(view: View) {
+        val intent = Intent(this, Posts::class.java)
+        startActivity(intent)
+    }
 }
