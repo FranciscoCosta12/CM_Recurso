@@ -125,4 +125,24 @@ class AddPost : AppCompatActivity() {
 
     }
 
+    fun postPag(view: View) {
+        val intent = Intent(this, Posts::class.java)
+        startActivity(intent)
+    }
+
+    fun mapPag(view: View) {
+        val intent = Intent(this, MapsActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun addPostPag(view: View) {
+        val intent = Intent(this, AddPost::class.java)
+        startActivity(intent)
+    }
+
+    fun notasPag(view: View) {
+        val intent = Intent(this, Notes::class.java)
+        startActivity(intent)
+    }
+
 }

@@ -17,4 +17,14 @@ interface EndPoints {
              @Field("rue") rue: String,
              @Field("desc") desc: String?,
              @Field("imagem") imagem: String?): Call<OutputPost>
+
+    @GET("/myslim/api/users")
+    fun getUsers(): Call<List<User>>
+
+    @GET("/myslim/api/users/{id}")
+    fun getUserssById(@Path("id") id: Int): Call<User>
+
+    @FormUrlEncoded
+    @POST("/myslim/api/user")
+    fun login(@Field("username") username: String?, @Field("password") password: String?): Call<OutputLogin>
 }

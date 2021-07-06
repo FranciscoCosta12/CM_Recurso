@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -87,5 +88,25 @@ class Notes : AppCompatActivity(), CellClickListener  {
                 Toast.makeText(this, "Nota não deletou, espaços vazios", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    fun postPag(view: View) {
+        val intent = Intent(this, Posts::class.java)
+        startActivity(intent)
+    }
+
+    fun mapPag(view: View) {
+        val intent = Intent(this, MapsActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun addPostPag(view: View) {
+        val intent = Intent(this, AddPost::class.java)
+        startActivity(intent)
+    }
+
+    fun notasPag(view: View) {
+        val intent = Intent(this, Notes::class.java)
+        startActivity(intent)
     }
 }

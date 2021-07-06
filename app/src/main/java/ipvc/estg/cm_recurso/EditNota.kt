@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -61,6 +62,26 @@ class EditNota : AppCompatActivity() {
         const val EDIT_ID = "EDIT_ID"
         const val EDIT_LOCAL = "EDIT_LOCAL"
         const val EDIT_DESC = "EDIT_DESC"
+    }
+
+    fun postPag(view: View) {
+        val intent = Intent(this, Posts::class.java)
+        startActivity(intent)
+    }
+
+    fun mapPag(view: View) {
+        val intent = Intent(this, MapsActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun addPostPag(view: View) {
+        val intent = Intent(this, AddPost::class.java)
+        startActivity(intent)
+    }
+
+    fun notasPag(view: View) {
+        val intent = Intent(this, Notes::class.java)
+        startActivity(intent)
     }
 
 }

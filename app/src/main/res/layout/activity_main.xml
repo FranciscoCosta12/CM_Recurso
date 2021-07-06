@@ -80,7 +80,11 @@
         android:layout_width="wrap_content"
         android:layout_height="29dp"
         android:layout_below="@+id/logo"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="-40dp"
         android:gravity="center"
         android:text="Sign in your account"
         android:textSize="20dp" />
@@ -103,44 +107,31 @@
         android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/password" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView_password"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:gravity="right"
-        android:text="Forget your password?" />
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="196dp"
         android:layout_height="76dp"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/checkBox"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="-1dp"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        app:srcCompat="@drawable/botao"
-        android:onClick="postsPag"/>
+        android:onClick="login"
+        app:srcCompat="@drawable/botao" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="196dp"
         android:layout_height="76dp"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/imageView4"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="112dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        app:srcCompat="@drawable/botao"
-        android:onClick="notasPag"/>
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:onClick="notasPag"
+        app:srcCompat="@drawable/botao" />
 
     <TextView
         android:id="@+id/textView5"
@@ -159,7 +150,7 @@
         android:layout_marginRight="68dp"
         android:layout_marginBottom="-40dp"
         android:gravity="center"
-        android:text="Ver Notas"
+        android:text="See Notes"
         android:textSize="20dp" />
 
     <TextView
@@ -195,7 +186,7 @@
         android:text="Don't have an account? Create " />
 
     <EditText
-        android:id="@+id/editText_username"
+        android:id="@+id/username"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView_username"
@@ -215,7 +206,7 @@
         android:text="Username" />
 
     <EditText
-        android:id="@+id/editText_password"
+        android:id="@+id/password"
         android:layout_width="232dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView_password"
@@ -233,6 +224,18 @@
         android:text="Password"
         android:inputType="textPersonName"
         android:maxLines="1"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        android:text="Remember" />
 
 
 </RelativeLayout>
